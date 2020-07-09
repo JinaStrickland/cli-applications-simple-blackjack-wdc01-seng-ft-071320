@@ -51,23 +51,9 @@ end
 #   end
 # end
 
+def hit2(card_total)
 
 
-
-def hit?(card_total)
-  prompt_user
-    x = get_user_input.to_s
-  if x == 's'
-    card_total
-  elsif x == 'h'
-    card_total=deal_card + card_total
-    card_total
-  else
-    invalid_command
-    prompt_user
-  end
-  card_total
-end
 
 
 
