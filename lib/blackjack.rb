@@ -56,7 +56,7 @@ def hit?(card_total)
   x = get_user_input
   while x != 's' && x != 'h'
     invalid_command
-    hit?(card_total)
+    x = get_user_input
   end
 
 end
