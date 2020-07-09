@@ -62,7 +62,6 @@ def hit?(card_total)
     card_total if x == 's'
 end
 
-p hit?(7)
 
 #####################################################
 # get every test to pass before coding runner below #
