@@ -37,37 +37,37 @@ def invalid_command
 end
 
 
-def hit?(card_total)
-  prompt_user
-  x = get_user_input
-  if x == 's'
-   card_total
-  elsif x == 'h'
-    card_total = deal_card + card_total
-     card_total
-  else
-    invalid_command
-    hit?(card_total)
-  end
-end
-
-
-
-
 # def hit?(card_total)
 #   prompt_user
-#     x = get_user_input.to_s
+#   x = get_user_input
 #   if x == 's'
-#     card_total
+#    card_total
 #   elsif x == 'h'
-#     card_total=deal_card + card_total
-#     card_total
+#     card_total = deal_card + card_total
+#      card_total
 #   else
 #     invalid_command
-#     prompt_user
+#     hit?(card_total)
 #   end
-#   card_total
 # end
+
+
+
+
+def hit?(card_total)
+  prompt_user
+    x = get_user_input.to_s
+  if x == 's'
+    card_total
+  elsif x == 'h'
+    card_total=deal_card + card_total
+    card_total
+  else
+    invalid_command
+    prompt_user
+  end
+  card_total
+end
 
 
 
