@@ -54,14 +54,12 @@ end
 def hit?(card_total)
   prompt_user
   x = get_user_input
+binding.pry
   while x != 's' && x != 'h'
-
+binding.pry
   end
 
-x == 's' 
-x == 'h'
 end
-
 
 #####################################################
 # get every test to pass before coding runner below #
