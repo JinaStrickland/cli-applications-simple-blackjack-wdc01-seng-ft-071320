@@ -51,8 +51,8 @@ end
 #   end
 # end
 
-def hit2(card_total)
-
+def hit?(card_total)
+  prompt_user
 
 
 
