@@ -54,12 +54,15 @@ end
 def hit?(card_total)
   prompt_user
   x = get_user_input
-binding.pry
   while x != 's' && x != 'h'
+    invalid_command
+    hit?(card_total)
 binding.pry
   end
 
 end
+
+p hit?(10)
 
 #####################################################
 # get every test to pass before coding runner below #
