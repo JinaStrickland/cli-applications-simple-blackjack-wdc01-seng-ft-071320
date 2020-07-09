@@ -53,9 +53,14 @@ end
 
 def hit?(card_total)
   prompt_user
+  x = get_user_input
+  while x != 's' && x != 'h'
 
+  end
 
-
+x == 's' 
+x == 'h'
+end
 
 
 #####################################################
