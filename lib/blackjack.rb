@@ -58,8 +58,8 @@ def hit?(card_total)
     invalid_command
     x = get_user_input
   end
-    puts "Jina" if x == 'h'
-    puts "James" if x == 's'
+    puts deal_card + card_total if x == 'h'
+    puts card_total if x == 's'
 end
 
 p hit?(10)
