@@ -57,7 +57,6 @@ def hit?(card_total)
   while x != 's' && x != 'h'
     invalid_command
     hit?(card_total)
-binding.pry
   end
 
 end
